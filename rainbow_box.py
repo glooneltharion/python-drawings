@@ -30,7 +30,7 @@ class RainbowBox:
         y1 = y0 + box
         r, g, b = color
         color_string = '#{:02x}{:02x}{:02x}'.format(r, g, b)
-        self.canvas.create_rectangle(x0, y0, x1, y1, fill=color_string)
+        self.canvas.create_rectangle(x0, y0, x1, y1, fill=color_string, outline="")
 
 
 if __name__ == "__main__":
