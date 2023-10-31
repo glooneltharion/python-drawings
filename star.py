@@ -7,7 +7,7 @@ def draw_star(star_color, bg_color):
     canvas = tk.Canvas(root, width=400, height=420, bg=bg_color)
     canvas.pack()
 
-    points = [200, 20, 80, 396, 380, 156, 20, 156, 320, 200]
+    points = [200, 20, 80, 396, 380, 156, 20, 156, 320, 396]
     canvas.create_polygon(points, outline=star_color, fill=star_color)
 
     root.mainloop()
