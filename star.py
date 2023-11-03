@@ -13,4 +13,4 @@ def draw_star(star_color, bg_color):
     root.mainloop()
 
 
-draw_star('#b280ff', 'black')
+draw_star('#b280ff', 'red')
