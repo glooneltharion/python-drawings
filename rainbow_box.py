@@ -9,15 +9,15 @@ class RainbowBox:
         self.HEIGHT = 350
         self.canvas = tk.Canvas(self.master, width=self.WIDTH, height=self.HEIGHT)
         self.canvas.pack()
-        self.draw_image()
+        self.draw_image(
+            [(255, 0, 0), (255, 127, 0), (255, 255, 0), (0, 255, 0), (0, 0, 255), (75, 0, 130), (127, 0, 255)])
 
-    def draw_image(self):
+    def draw_image(self, colors):
         # Create a square drawing function that takes 3 parameters (the square size, the fill color and the graphics)
         # and draws a square of that size and color to the center of the canvas. Create a loop that fills the canvas
         # with rainbow colored squares (red, orange, yellow, green, blue, indigo, violet).
 
         box = 350
-        colors = [(255, 0, 0), (255, 127, 0), (255, 255, 0), (0, 255, 0), (0, 0, 255), (75, 0, 130), (127, 0, 255)]
 
         for i in range(7):
             new_color = colors[i]
